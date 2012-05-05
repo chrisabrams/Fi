@@ -1,0 +1,32 @@
+extends layout
+
+block content
+	div.container
+		div.row-fluid
+			div.span6
+				div#upload-container.contain
+					div#alert
+						span#alert-msg
+						//a.close(data-dismiss="alert", href="#") x
+					div.row-fluid
+						div.span6
+							form#uploadForm(enctype="multipart/form-data", method="post").form-horizontal
+								div
+									input#file(name="file", type="file")
+								div
+									button#file-upload-submit.btn Submit
+								div#file-upload-progress.progress.progress-success.progress-striped
+									div#file-upload-progress-bar.bar(style="width: 0%")
+						div.span6
+							h3 File Info
+							div.file-info-container
+								span.file-info-label File Name:
+								span#file-name-label
+							div.file-info-container
+								span.file-info-label File Size:
+								span#file-size-label
+							div.file-info-container
+								span.file-info-label File Type:
+								span#file-type-label
+			div.span6
+				&nbsp;
