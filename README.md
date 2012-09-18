@@ -1,4 +1,7 @@
-#Getting Started
+#Fi - File upload with progress bar
+HTML5 implementation of file upload with node.js for server-side.
+
+##Getting Started
 The following will be needed before beginning:
  - A modern web browser supporting HTML5
  - [Node.js](https://github.com/joyent/node) v0.6.x
